@@ -52,7 +52,7 @@ function AppViewModel() {
           if (i < arrayOfMem.length - 1)
             result += ",";
       }
-      result += "&topicName=" + Math.floor(Math.random() * 100); 
+      result += "&topicName=" + "TORENAME_" + Math.floor(Math.random() * 100); 
       return result;
     });
 
