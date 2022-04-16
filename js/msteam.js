@@ -1,7 +1,7 @@
 ko.applyBindings(new AppViewModel())
 function AppViewModel() {
     var self = this;
-    const domain = ["vingroup.net", "vinfast", "vinsmart", "vinfast", "vinhomes", "vinbigdata", "vin3s"];
+    const domain = ["vingroup", "vinfast", "vinsmart", "vinfast", "vinhomes", "vinbigdata", "vin3s"];
     self.input = ko.observable("");
     self.ids = ko.observableArray([]);
 
