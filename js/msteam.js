@@ -34,6 +34,13 @@ function AppViewModel() {
       return "Chat(" + arrayOfMem.length + ")";
     });
 
+    self.numberMemCall = ko.computed(function() {
+      if (self.ids().length == 0)
+        return "Call";
+      arrayOfMem = self.ids().toString().split(",");
+      return "Call(" + arrayOfMem.length + ")";
+    });
+
     self.showAlert = function() {
       if (self.ids().length == 0) {
         alert("There is no Id. Please input at least one. ^^");
@@ -53,6 +60,19 @@ function AppViewModel() {
             result += ",";
       }
       result += "&topicName=" + "TORENAME_" + Math.floor(Math.random() * 100); 
+      return result;
+    });
+
+    self.callGroupLink = ko.computed(function() {
+      if (self.email().length == 0)
+        return "";
+      arrayOfMem = self.email().toString().split(", ");
+      result = "https://teams.microsoft.com/l/call/0/0?users=";
+      for (i = 0; i < arrayOfMem.length; i++) {
+          result += arrayOfMem[i];
+          if (i < arrayOfMem.length - 1)
+            result += ",";
+      }
       return result;
     });
 
