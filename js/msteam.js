@@ -8,8 +8,7 @@ function AppViewModel() {
     self.makeIds = ko.computed(function() {
       strInput = self.input().toLowerCase();        
       var arrayOfStr = strInput.split(/[^a-z0-9_-]/);
-      console.log(arrayOfStr);
-
+      self.ids.removeAll();
       for (i = 0; i < arrayOfStr.length; i++) {
         if (arrayOfStr[i].length >=4 && arrayOfStr[i].length <= 49 && 
             !domain.includes(arrayOfStr[i]) && self.ids.indexOf(arrayOfStr[i]) == -1) {
