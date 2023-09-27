@@ -1,0 +1,17 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "annualproject.com.jainamsoftware",
+    "sha256_cert_fingerprints":
+    ["CD:B4:F0:34:9E:A8:B1:17:7D:75:DF:E9:BC:E9:B9:40:17:9E:93:C5:1C:29:0E:3C:F3:B5:27:7B:63:B7:EE:EB"]
+  }
+}, {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "annualproject.com.jainamsoftware",
+    "sha256_cert_fingerprints":
+    ["DC:04:5A:AC:67:DD:C1:BC:4A:47:AD:94:81:C3:1F:90:B4:29:26:F6:05:16:C8:88:F3:00:CE:A0:B7:25:99:12"]
+  }
+}]
